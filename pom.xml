@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.eaf</groupId>
-	<artifactId>eaf-test-service</artifactId>
+	<artifactId>efa-restorent-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>eaf-test-service</name>
+	<name>efa-restorent-service</name>
 	<description>Enterprise Application Framework</description>
 	<properties>
 		<java.version>18</java.version>
