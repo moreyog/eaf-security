@@ -32,11 +32,11 @@ public class SecurityConfig {
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
         return http.csrf().disable()
                 .authorizeHttpRequests()
-                .requestMatchers("/auth/register","/auth/authenticate","/auth/welcome").permitAll()
+                .requestMatchers("/auth/register","/auth/authenticate","/auth/welcome","/payment/welcome").permitAll()
                 .and()
                 .authorizeHttpRequests().requestMatchers("/auth/all").hasRole("ADMIN")
                 .and()
-                .authorizeHttpRequests().requestMatchers("/**")
+                .authorizeHttpRequests().requestMatchers("/payment/**","/restorent/**")
                 .authenticated()
                 .and()
                 .sessionManagement()
