@@ -36,7 +36,7 @@ public class SecurityConfig {
                 .and()
                 .authorizeHttpRequests().requestMatchers("/auth/all").hasRole("ADMIN")
                 .and()
-                .authorizeHttpRequests().requestMatchers("/restorent/**")
+                .authorizeHttpRequests().requestMatchers("/payment/**","/restorent/**")
                 .authenticated()
                 .and()
                 .sessionManagement()
